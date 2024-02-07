@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      .section-1 .container {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .section-1 img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+      }
+      .section-1 h1 {
+        margin-top: 10px;
+        font-size: 2rem;
+      }
+      .section-1 h3 {
+        margin-top: 5px;
+        font-size: 1rem;
+      }
+
+      /* section-2 */
+
+      .section-2 {
+        text-align: center;
+        height: 90vh;
+      }
+
+      .skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        text-align: justify;
+      }
+
+      .section-2 > .container > h2 {
+        margin-top: 60px;
+      }
+
+      .skills div {
+        margin-top: 45px;
+        height: 300px;
+        width: 300px;
+        background-color: beige;
+        padding: 15px;
+        border-radius: 10%;
+      }
+
+      .skills div p {
+        margin-top: 12px;
+      }
+
+      .section-2 > p {
+        margin-top: 100px;
+        position: absolute;
+        left: 300px;
+      }
+
+      /* section-3 */
+
+      .section-3 {
+        height: 100vh;
+        text-align: center;
+      }
+
+      .section-3 > h2 {
+        margin-top: 20px;
+      }
+
+      .section-3 > p {
+        position: absolute;
+        left: 392px;
+        margin-top: 20px;
+      }
+
+      .section-3 > .box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        height: 70vh;
+        margin-top: 50px;
+      }
+
+      .section-3 > .box .box1 {
+        grid-area: 1 / 2 / 2 / 3;
+        background-color: aquamarine;
+      }
+      .section-3 > .box .box2 {
+        grid-area: 1 / 3 / 2 / 4;
+        background-color: aquamarine;
+      }
+      .section-3 > .box .box3 {
+        grid-area: 2 / 2 / 3 / 3;
+        background-color: aquamarine;
+      }
+      .section-3 > .box .box4 {
+        grid-area: 2 / 3 / 3 / 4;
+        background-color: aquamarine;
+      }
+
+      .section-3 .box div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-size: larger;
+      }
+
+      .section-4 {
+        text-align: center;
+      }
+      .section-4 > .container {
+        display: flex;
+        height: 40vh;
+        justify-content: space-around;
+      }
+
+      .section-4 h2{
+        margin-top: 10px;
+        margin-bottom: 30px;
+
+      }
+
+      .section-4 > .container div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background-color: chartreuse;
+      }
+
+      @media (max-width: 430px) {
+        .section-1 .container {
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .section-1 img {
+          height: 150px;
+          width: 150px;
+          border-radius: 50%;
+        }
+
+        .section-1 h1 {
+          margin-top: 8px;
+          font-size: 1.5rem;
+        }
+        .section-1 h3 {
+          margin-top: 4px;
+          font-size: 0.75rem;
+        }
+
+        /* section-2 */
+        .section-2 {
+          text-align: center;
+          height: 95vh;
+          margin-bottom: 40px;
+        }
+
+        .section-2 > p {
+          position: absolute;
+          left: 70px;
+          margin-top: 60px;
+          margin-bottom: 100px;
+        }
+
+        .section-2 > .container > h2 {
+          font-size: 2rem;
+        }
+
+        .section-2 > .container > p {
+          margin-top: 10px;
+          text-align: center;
+        }
+
+        .skills {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          /* margin-bottom: 20px; */
+        }
+
+        .skills div {
+          margin-top: 30px;
+          height: auto;
+          width: 270px;
+          justify-content: space-around;
+          background-color: beige;
+          padding: 15px;
+          border-radius: 10%;
+        }
+
+        /* section-3 */
+
+        .section-3 {
+          height: 52vh;
+          text-align: center;
+        }
+
+        .section-3 > h2 {
+          margin-top: 40px;
+        }
+
+        .section-3 > p {
+          position: absolute;
+          left: 50px;
+          margin-top: 20px;
+        }
+
+        .section-3 > .box {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: repeat(2, 1fr);
+          gap: 5px;
+          height: 35vh;
+          margin-top: 50px;
+        }
+
+        .section-3 > .box .box1 {
+          grid-area: 1 / 1 / 2 / 2;
+          background-color: aquamarine;
+        }
+        .section-3 > .box .box2 {
+          grid-area: 1 / 2 / 2 / 3;
+          background-color: aquamarine;
+        }
+        .section-3 > .box .box3 {
+          grid-area: 2 / 1 / 3 / 2;
+          background-color: aquamarine;
+        }
+        .section-3 > .box .box4 {
+          grid-area: 2 / 2 / 3 / 3;
+          background-color: aquamarine;
+        }
+
+        /* section-4 */
+
+        .section-4 {
+          text-align: center;
+        }
+        .section-4 > .container {
+          display: flex;
+          height: 21vh;
+          margin-top: 30px;
+          justify-content: space-around;
+        }
+
+        .section-4 > h2{
+            margin-top: 60px;
+        }
+
+        .section-4 > .container div {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          background-color: chartreuse;
+          font-size: small;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section-1">
+      <div class="container">
+        <img
+          src="./Passport_Size.jpg"
+          alt="my picture"
+          height="200"
+          width="200"
+        />
+        <h1>Hello, Myself Harshit Agarwal</h1>
+        <h3>This picture is centered using <b>flexbox</b> properties</h3>
+      </div>
+    </section>
+    <hr />
+
+    <section class="section-2">
+      <div class="container">
+        <h2 class="section-heading">Skills</h2>
+        <div class="container skills">
+          <div class="skill-1">
+            <h3>Web Development</h3>
+            <p>
+              I started learning web development from last 1 year and I know the
+              basics of web development. I joined the web develpment course by
+              Angela Yu so that I can become a professional web developer. I'm
+              really enjoying doing exercises and projects and I am becoming
+              professional in web development.
+            </p>
+          </div>
+          <div class="skill-2">
+            <h3>Problem Solving</h3>
+            <p>
+              I also really like solving programming questions on leetcode and
+              my preferred language is c++. I have more than 1 year of
+              experience in it and I've solved 180+ leetcode questions. my next
+              target is 500 leetcode questions, I love questions on Dynamic
+              programming and Arrays.
+            </p>
+          </div>
+        </div>
+        <!-- <p>Above 2 items are <b>flexbox</b> items placed horizontally</p> -->
+      </div>
+      <p>Above 2 items are <b>flexbox</b> items</p>
+    </section>
+    <hr />
+
+    <section class="section-3">
+      <h2 class="section-heading">Programming Languages</h2>
+      <div class="container box">
+        <div class="box1">C++</div>
+        <div class="box2">Javascript</div>
+        <div class="box3">HTML</div>
+        <div class="box4">CSS</div>
+      </div>
+      <p style="margin-bottom: 10px">
+        Above design is acheived by using <b>Grid</b>
+      </p>
+    </section>
+    <hr />
+
+    <section class="section-4">
+        <h2 class="section-heading">Connect with Me</h2>
+        <div class="container">
+            <div class="box1"><a href="./mobile_number.html">Mobile Number</a></div>
+            <div class="box2"><a href="./Email_address.html">Email Address</a></div>
+            <div class="box3"><a href="https://www.linkedin.com/in/harshit-agarwal-730198248">Linkedin Profile</a></div>
+        </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
